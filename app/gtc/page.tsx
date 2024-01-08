@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import driveImg from "../public/assets/projects/drive.png";
+import gtcImg from "../../public/assets/gtc-mall.png";
 import { RiRadioButtonFill } from "react-icons/ri";
+
 import Link from "next/link";
 
-const property = () => {
+const GTC = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -13,12 +14,12 @@ const property = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={driveImg}
+          src={gtcImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Property Finders</h2>
-          <h3>React JS / CSS </h3>
+          <h2 className="py-2"> GTC-mall </h2>
+          <h3> Shopping mall,business centre and real estate complex</h3>
         </div>
       </div>
 
@@ -27,27 +28,19 @@ const property = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            This landing page was built using React JS and is hosted on Vercel.
-            Users are able to search and filter through cars based on location
-            and dates to retrieve a list of active cars currently for sale. You
-            will be able to view car information as well as the specific model
-            of the vehicle. User authentication is available so you can signup
-            and signin to your account with an email address in order to save
-            your favorite properties.
+            This application was built using REACT.JS and is styled with
+            Tailwind CSS. The application is hosted statically using Vercel.
+            This is a mobile responsive landing page for a fast food
+            restaurant.. Users may select their desired meals from the menu. A
+            few features to note with this project are React routing , ability
+            of the user to filter the meals either by type or by price.
           </p>
           <a
-            href="https://github.com/Flasky06/drive-landing-page"
+            href="https://foody-nu.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
-            <button className="px-8 py-2 mt-4 mr-8">Code</button>
-          </a>
-          <a
-            href="https://drive-landing-page.vercel.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button className="px-8 py-2 mt-4">Demo</button>
+            <button className="px-8 py-2 mt-4 mr-8">Visit site</button>
           </a>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4">
@@ -55,10 +48,10 @@ const property = () => {
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> React
+                <RiRadioButtonFill className="pr-1" /> Next.JS
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> CSS
+                <RiRadioButtonFill className="pr-1" /> Tailwind
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Javascript
@@ -74,4 +67,4 @@ const property = () => {
   );
 };
 
-export default property;
+export default GTC;

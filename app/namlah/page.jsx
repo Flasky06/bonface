@@ -1,13 +1,15 @@
 import Image from "next/image";
 import React from "react";
 import namlahImg from "../../public/assets/projects/Namlah.png";
+import { RiRadioButtonFill } from "react-icons/ri";
+
 import Link from "next/link";
 
 const namlah = () => {
   return (
     <div className="w-full">
-      <div className="w-screen h-[80vh] relative">
-        <div className="absolute top-0 left-0 w-full h-[80vh] bg-black/70 z-10" />
+      <div className="w-screen h-[50vh] relative">
+        <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10" />
         <Image
           className="absolute z-1"
           layout="fill"
@@ -15,7 +17,7 @@ const namlah = () => {
           src={namlahImg}
           alt="/"
         />
-        <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
+        <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2n">
           <h2 className="py-2">Namlah homes </h2>
           <h3> property management website</h3>
         </div>
@@ -26,25 +28,37 @@ const namlah = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            I proudly showcase my contribution to Namlah Homes Limited's dynamic
-            real estate website. Seamlessly merging innovative design with
-            cutting-edge functionality, I've crafted a user-centric platform
-            that effortlessly connects potential buyers with their dream
-            properties. Through meticulous coding and user interface
-            optimization, I've enhanced the browsing experience, ensuring
-            intuitive navigation and swift access to property listings. Namlah
-            Homes Limited's website stands as a testament to my expertise in
-            transforming vision into digital reality, empowering the real estate
-            journey with technology that captivates and delivers.
+            This application was built using REACT.JS and is styled with
+            Tailwind CSS. The application is hosted statically using Vercel.
+            This is a mobile responsive landing page for a fast food
+            restaurant.. Users may select their desired meals from the menu. A
+            few features to note with this project are React routing , ability
+            of the user to filter the meals either by type or by price.
           </p>
-
-          <a href="www.namlahhomes.com" target="_blank" rel="noreferrer">
-            <button className="px-8 py-2 mt-4 bg-blue-500 text-white">
-              View Site
-            </button>
+          <a
+            href="https://foody-nu.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="px-8 py-2 mt-4 mr-8">Visit site</button>
           </a>
         </div>
-
+        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4">
+          <div className="p-2">
+            <p className="text-center font-bold pb-2">Technologies</p>
+            <div className="grid grid-cols-3 md:grid-cols-1">
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> Next.JS
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> Tailwind
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> Javascript
+              </p>
+            </div>
+          </div>
+        </div>
         <Link href="/#projects">
           <p className="underline cursor-pointer">Back</p>
         </Link>

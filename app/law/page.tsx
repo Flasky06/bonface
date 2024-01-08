@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import eateryImg from "../../public/assets/projects/eatery.png";
+import firmImg from "../../public/assets/projects/firm.png";
 import { RiRadioButtonFill } from "react-icons/ri";
+
 import Link from "next/link";
 
-const eatery = () => {
+const law = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -13,12 +14,12 @@ const eatery = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={eateryImg}
+          src={firmImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Eatery </h2>
-          <h3>Next JS / Tailwind / javaScript</h3>
+          <h2 className="py-2">Law website </h2>
+          <h3> law website</h3>
         </div>
       </div>
 
@@ -62,8 +63,12 @@ const eatery = () => {
           <p className="underline cursor-pointer">Back</p>
         </Link>
       </div>
+
+      <Link href="/#projects">
+        <p className="underline cursor-pointer">Back</p>
+      </Link>
     </div>
   );
 };
 
-export default eatery;
+export default law;

@@ -1,7 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import hyperwaveImg from "../public/assets/projects/HyperwaveKenya.png";
+import hyperwaveImg from "../../public/assets/projects/HyperwaveKenya.png";
 import Link from "next/link";
+import { RiRadioButtonFill } from "react-icons/ri";
 
 const hyperwave = () => {
   return (
@@ -26,38 +27,37 @@ const hyperwave = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            {/* I built this app to demonstrate knowledge working in React JS and
-						accessing API endpoints. This app was built using React JS and is
-						hosted on Firebase. This application supports user authentication
-						using firebase. Users are able to create a new account using their
-						email address and can then sign in to save coins to a user specific
-						list. This is made possble by creating a firestore cloud storage
-						database at the time of user registration. Another feature of this
-						application is dynamic routing through the &quot;React Router
-						DOM&quot; package. This application was built using the Coin Gecko
-						API. */}
-            As a contracted IT developer, I contributed to the dynamic digital
-            presence of Hyperwave Technologies, a cutting-edge networking
-            company. Through skillful coding and strategic design, I enhanced
-            the website's user experience, ensuring seamless navigation and
-            efficient access to its innovative networking solutions.
-            Collaborating closely with the team, I integrated state-of-the-art
-            features that spotlighted Hyperwave's prowess in the industry. The
-            result is a responsive and visually captivating website that mirrors
-            the company's commitment to technological advancement. My role in
-            shaping Hyperwave's virtual gateway underscores my dedication to
-            elevating brands through impactful digital solutions.
+            This application was built using REACT.JS and is styled with
+            Tailwind CSS. The application is hosted statically using Vercel.
+            This is a mobile responsive landing page for a fast food
+            restaurant.. Users may select their desired meals from the menu. A
+            few features to note with this project are React routing , ability
+            of the user to filter the meals either by type or by price.
           </p>
-
           <a
-            href="https://www.hyperwave.co.ke/"
+            href="https://foody-nu.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
-            <button className="px-8 py-2 mt-4">View Site</button>
+            <button className="px-8 py-2 mt-4 mr-8">Visit site</button>
           </a>
         </div>
-
+        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4">
+          <div className="p-2">
+            <p className="text-center font-bold pb-2">Technologies</p>
+            <div className="grid grid-cols-3 md:grid-cols-1">
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> Next.JS
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> Tailwind
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> Javascript
+              </p>
+            </div>
+          </div>
+        </div>
         <Link href="/#projects">
           <p className="underline cursor-pointer">Back</p>
         </Link>

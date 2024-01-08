@@ -1,8 +1,11 @@
 import React from "react";
 import potatoImg from "../public/assets/projects/Mr-PotatoHead.png";
 import hyperwaveImg from "../public/assets/projects/HyperwaveKenya.png";
-import gtc from "../public/assets/projects/gtc-mall.png";
 import namlahImg from "../public/assets/projects/Namlah.png";
+import eateryImg from "../public/assets/projects/eatery.png";
+
+import gtc from "../public/assets/projects/gtc-mall.png";
+import firmImg from "../public/assets/projects/firm.png";
 
 import ProjectItem from "./ProjectItem";
 
@@ -34,16 +37,23 @@ const Projects = () => {
             tech="Grocery eccomerce website"
           />
           <ProjectItem
-            title="https://www.hyperwave.co.ke"
+            title="hyperwave"
             backgroundImg={hyperwaveImg}
             projectUrl="/hyperwave"
             tech="https://www.hyperwave.co.ke"
           />
           <ProjectItem
-            title="GTC-mall"
-            backgroundImg={gtc}
-            projectUrl="/gtc"
-            tech="https://gtc-v2.vercel.app/"
+            title="law"
+            backgroundImg={firmImg}
+            projectUrl="/law"
+            tech="https://njuguna-law.vercel.app/"
+          />
+          <ProjectItem
+            title="eatery"
+            backgroundImg={eateryImg}
+            projectUrl="/eatery"
+            tech="foody-nu.vercel.app
+            "
           />
         </div>
       </div>

@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import potatoImg from "../public/assets/projects/Mr-PotatoHead.png";
+import potatoImg from "../../public/assets/projects/Mr-PotatoHead.png";
+import { RiRadioButtonFill } from "react-icons/ri";
+
 import Link from "next/link";
 
 const potato = () => {
@@ -26,23 +28,37 @@ const potato = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            I built and manage the online grocery store website "Mr. Potato Head
-            & Veges." Seamlessly blending functionality and user experience, the
-            platform offers a diverse range of fresh produce and grocery items
-            at customers' fingertips. From intuitive browsing to secure
-            checkout, I ensured a smooth digital shopping journey. The website's
-            responsive design guarantees accessibility across devices, while
-            robust backend integration streamlines inventory management and
-            order processing. Through collaborative problem-solving and
-            innovative coding, I helped establish an efficient and user-friendly
-            online marketplace that caters to the modern shopper's needs.
+            This application was built using REACT.JS and is styled with
+            Tailwind CSS. The application is hosted statically using Vercel.
+            This is a mobile responsive landing page for a fast food
+            restaurant.. Users may select their desired meals from the menu. A
+            few features to note with this project are React routing , ability
+            of the user to filter the meals either by type or by price.
           </p>
-
-          <a href="www.mrpotatohead.store" target="_blank" rel="noreferrer">
-            <button className="px-8 py-2 mt-4">View Site</button>
+          <a
+            href="https://foody-nu.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="px-8 py-2 mt-4 mr-8">Visit site</button>
           </a>
         </div>
-
+        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4">
+          <div className="p-2">
+            <p className="text-center font-bold pb-2">Technologies</p>
+            <div className="grid grid-cols-3 md:grid-cols-1">
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> Next.JS
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> Tailwind
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> Javascript
+              </p>
+            </div>
+          </div>
+        </div>
         <Link href="/#projects">
           <p className="underline cursor-pointer">Back</p>
         </Link>
