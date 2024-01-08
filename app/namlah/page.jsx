@@ -1,13 +1,13 @@
 import Image from "next/image";
 import React from "react";
-import namlahImg from "../public/assets/projects/Namlah.png";
+import namlahImg from "../../public/assets/projects/Namlah.png";
 import Link from "next/link";
 
 const namlah = () => {
   return (
     <div className="w-full">
-      <div className="w-screen h-[50vh] relative">
-        <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10" />
+      <div className="w-screen h-[80vh] relative">
+        <div className="absolute top-0 left-0 w-full h-[80vh] bg-black/70 z-10" />
         <Image
           className="absolute z-1"
           layout="fill"
@@ -39,7 +39,9 @@ const namlah = () => {
           </p>
 
           <a href="www.namlahhomes.com" target="_blank" rel="noreferrer">
-            <button className="px-8 py-2 mt-4">View Site</button>
+            <button className="px-8 py-2 mt-4 bg-blue-500 text-white">
+              View Site
+            </button>
           </a>
         </div>
 

@@ -24,7 +24,7 @@ const Projects = () => {
           <ProjectItem
             title="Namlah Homes"
             backgroundImg={namlahImg}
-            projectUrl="namlahhomes"
+            projectUrl="/namlah"
             tech="https://namlahhomes.com"
           />
           <ProjectItem
